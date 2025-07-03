@@ -1,32 +1,55 @@
 import React from "react";
-import { IconArrowRight,IconCircleCheck } from '@tabler/icons-react';
-import scientist from '../assets/images/conf2.png'
+import { IconArrowRight } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
-const About = () => {
-    return (
-        <div>
-            <div className="h-screen flex justify-center relative items-center font-spaceGrotesk m-5">
-                <div className="flex flex-col md:flex-row gap-6 md:gap-0">
-                <div className="text-white flex flex-col gap-10 md:w-7/12">
-                    <div className="flex flex-col gap-3">
-                        <h1 className="text-white text-4xl font-bold">About Conference</h1>
-                        <p className="font-plusJakarta font-medium bg-gradient-to-b from-white to-[#181818] text-transparent bg-clip-text md:w-10/12">The development of science and technology produces global changes in various aspects of life. The prosperity of a nation does not only come from physical natural resources but also human resources in the form of intellectual capital, social capital, and credibility. The demand to improve the quality of education is a necessity in today's industry. </p>
-                        <Link to="/information">
-                        <button className="flex items-center gap-3 bg-colorGreen px-5 py-2 font-bold rounded-full w-fit text-lg text-black hover:bg-[#181818] hover:text-colorGreen border border-colorGreen hover:border-colorGreen">Read Information <IconArrowRight/></button>
-                        </Link>
-                    </div>
-                    <div className="flex flex-col gap-3">
-                        <h1 className="text-white text-2xl font-bold">Submission</h1>
-                        <p className="font-plusJakarta text-gray-400 md:w-10/12">We invite you to submit your research work to our conference, where accepted papers will have the opportunity to be published in prestigious journals. The Journal of Science and Applicative Technology (JSAT), a SINTA 3 accredited journal. Additionally, submissions are open for the Journal of Multidisciplinary Applied Natural Science, a Q2-ranked journal.</p>
-                    </div>
-                </div>
-                <div className="order-first md:w-1/2 md:order-last">
-                    <img src={scientist} className="rounded-lg w-full h-28 md:h-auto object-cover"/>
-                </div>
-                </div>
-            </div>
-        </div>
-    )
-}
+import pkki1 from "../assets/images/liris.jpg";
+import pkki2 from "../assets/images/pkki1.jpg";
+import pkki3 from "../assets/images/pkki2.jpg";
+import pkki4 from "../assets/images/tim.jpg";
 
-export default About
+const About = () => {
+  return (
+    <div className="min-h-screen flex items-center justify-center px-5 md:px-16 mt-10 font-spaceGrotesk">
+      <div className="flex flex-col md:flex-row items-center gap-12 max-w-7xl w-full">
+
+      {/* Galeri Gambar dengan Overlay Gradient */}
+      <div className="grid grid-cols-2 gap-4 w-full md:w-1/2 order-last md:order-first">
+        {[pkki1, pkki2, pkki3, pkki4].map((img, i) => (
+          <div key={i} className="relative rounded-lg overflow-hidden shadow-lg group">
+            <img
+              src={img}
+              alt={`pkki-${i + 1}`}
+              className="object-cover w-full h-36 md:h-40 transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#3a476780] via-[#3867a680] to-[#735ba7cc] opacity-80"></div>
+          </div>
+        ))}
+      </div>
+
+
+        {/* Teks di Kanan */}
+        <div className="text-white flex flex-col gap-10 w-full md:w-1/2">
+          <div className="flex flex-col gap-3">
+            <h2 className="text-2xl font-bold text-colorItera">Mendorong Inovasi - Melindungi Karya</h2>
+            <p className="font-plusJakarta text-gray-400">
+              PKKI didukung oleh tim ahli yang berdedikasi dalam pengelolaan kekayaan intelektual, siap mendampingi proses administrasi, pelatihan, dan advokasi.
+            </p>
+          </div>
+                    <div className="flex flex-col gap-4">
+            <h1 className="text-4xl font-bold">Tentang PKKI</h1>
+            <p className="font-plusJakarta font-medium bg-gradient-to-b from-white to-[#181818] text-transparent bg-clip-text">
+              PKKI berperan sebagai pusat informasi dan layanan untuk pengajuan Hak Kekayaan Intelektual (HKI), baik dalam bentuk hak cipta, paten, maupun kekayaan intelektual lainnya. Tujuan utamanya adalah mendorong inovasi, perlindungan karya, dan kontribusi nyata terhadap pengembangan ilmu pengetahuan dan teknologi di Indonesia.
+            </p>
+            <Link to="/information">
+              <button className="flex items-center gap-3 bg-colorGreen px-5 py-2 font-bold rounded-full w-fit text-lg text-black hover:bg-[#181818] hover:text-colorGreen border border-colorGreen">
+                Tim PKKI <IconArrowRight />
+              </button>
+            </Link>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
+};
+
+export default About;

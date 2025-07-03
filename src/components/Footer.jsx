@@ -1,15 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { IconArrowRight } from '@tabler/icons-react';
-import logoFooter from '../assets/images/footer.png'
+import logoFooter from '../assets/images/logo-dark.svg'
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
     return (
         <>
         <div className="flex items-center justify-between mx-10 py-5 mt-[8em] border-t border-white border-opacity-10">
-            <img src={logoFooter} width={200}/>
-            <p className="font-plusJakarta text-white text-xs md:text-sm">Copyright ICSSF 2024</p>
-            {/*<div className="absolute bg-gradient-to-b from-[#121212] to-[#39FF14] bg-opacity-0 w-[60em] h-72 rounded-full left-0 right-0 ml-auto mr-auto -bottom-[20px] blur-3xl"></div>*/}
+            <img src={logoFooter} width={200} alt="PKKI ITERA Logo" />
+            <p className="font-plusJakarta text-white text-xs md:text-sm flex items-center gap-1">
+                Made with <span role="img" aria-label="love">❤️</span> Tim PKKI ITERA Allright reserved ©️ {currentYear}
+            </p>
         </div>
         </>
     )

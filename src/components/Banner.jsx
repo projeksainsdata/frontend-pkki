@@ -1,43 +1,55 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IconFileDescription } from '@tabler/icons-react';
-import hero from "../assets/images/hero.png";
+import hero from "../assets/images/hero2-01.png";
+import lpmpp from "../assets/images/lpmpp-01.png";
 
 const Banner = () => {
-    return (
-        <div className="bannerHome h-screen relative md:-mt-[120px]">
-            <div className="overlay"></div>
-            <img src={hero} alt="hero" className="object-cover w-full h-full absolute" />
-            <div className="bannerContent z-10 relative font-bold mt-2 flex-row font-spaceGrotesk text-center">
-                <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl text-white mb-2">
-                    1st International Conference On Sustainability of Sciences for the Future ( ICSSF )
-                </h1>
-                <h1 className="text-colorGreen text-2xl sm:text-2xl md:text-3xl lg:text-3xl pt-5">
-                    September 26-27th, 2024
-                </h1>
-                <h1 className="text-xl sm:text-xl md:text-2xl lg:text-2xl text-white italic font-plusJakarta">
-                    "Building Up The Next Generation of Scientists"
-                </h1>
-                <div className="mt-[50px] flex items-center justify-center">
-                    <Link className="bg-colorGreen flex w-fit py-2 px-5 items-center rounded-full gap-1" to={'/'}>
-                        <IconFileDescription className="w-5 mb-1" /> Call for Paper
-                    </Link>
-                </div>
+  const handleLoginClick = () => {
+    window.location.href = "/admin/login";
+  };
+
+return (
+    <div className="bannerHome h-screen relative md:-mt-[120px] overflow-hidden">
+        <div className="overlay"></div>
+        <img
+            src={hero}
+            alt="hero"
+            className="object-cover w-full h-full absolute"
+            loading="lazy"
+        />
+        <div className="bannerContent z-10 relative font-spaceGrotesk h-full flex flex-col items-center justify-center text-center md:items-start md:text-left px-5 md:px-12 mx-4 md:mx-8">
+            <p className="text-white">Lembaga Penjaminan Mutu dan Pengembangan Pembelajaran</p>
+            <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-5xl text-white mb-4 font-bold">
+                <span className="font-extrabold text-colorItera">
+                    Pusat Kelola Karya Intelektual
+                </span> <br />
+                <span className="text-colorGreen">
+                    Institut Teknologi Sumatera
+                </span>
+            </h1>
+
+            <div className="flex flex-wrap gap-4 mt-10 justify-center md:justify-start">
+                <button
+                    onClick={handleLoginClick}
+                    className="bg-colorGreen text-white px-6 py-3 rounded-full hover:bg-colorItera transition duration-300"
+                >
+                    Login
+                </button>
+                <Link
+                    to="/daftar-hak-paten"
+                    className="bg-colorGreen text-white px-6 py-3 rounded-full hover:bg-colorItera transition duration-300"
+                >
+                    Login SSO
+                </Link>
             </div>
-            <ul className="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
         </div>
-    );
+
+        <ul className="circles absolute top-0 left-0 w-full h-full pointer-events-none">
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+        </ul>
+    </div>
+);
 };
 
 export default Banner;

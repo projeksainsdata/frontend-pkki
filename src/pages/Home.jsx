@@ -12,6 +12,7 @@ import Trip from "../components/Trip";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Speaker from "../components/Speaker";
+import JenisHaki from "../components/Timeline";
 
 const Home = () => {
     return (
@@ -19,13 +20,7 @@ const Home = () => {
         <Navbar/>
         <Banner/>
         <About/>
-        <Timeline/>
-        <Topics/>
-        <Keynote/>
-        <Speaker/>
-        <Pricelist/>
-        <Countdown/>
-        <Venue/>
+        <JenisHaki/>
         <Trip/>
         <Contact/>
         <Footer/>
