@@ -2,80 +2,26 @@ import React from "react";
 import BannerCustom from "../components/HeroCustom";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 import {
   IconMapPin,
   IconPhoneCall,
   IconMail,
   IconBrandInstagram,
 } from "@tabler/icons-react";
+import StrukturTim from "../components/Tim";
+import Kontakkami from "../components/Kontak";
 
 const TentangKami = () => {
   return (
     <>
       <Navbar />
-      <BannerCustom name="Kontak Kami" />
+      <BannerCustom name="Tentang Kami" />
 
       <section className="py-20 text-colorDarkBlue">
+        <StrukturTim />
         <div className="max-w-7xl mx-auto px-6 mt-10 space-y-16">
-          {/* Judul */}
-          <div className="text-center">
-            <h1 className="text-3xl md:text-4xl font-bold">Hubungi PKKI ITERA</h1>
-            <p className="text-gray-400 mt-2">Kami siap membantu Anda dalam pengurusan HAKI di kampus ITERA.</p>
-          </div>
-
-          {/* Kontak Info */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-[#121212] p-6 rounded-xl border border-white/10 hover:border-colorGreen transition">
-              <div className="flex items-start gap-4">
-                <div className="bg-white/10 p-3 rounded-lg">
-                  <IconMapPin className="text-colorGreen" size={24} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-colorItera mb-1">Alamat</h4>
-                  <p className="text-gray-300 text-sm leading-relaxed">
-                    Gedung Training Center, Jalan Terusan Ryacudu, Way Hui, Kecamatan Jatiagung, Lampung Selatan 35365.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-[#121212] p-6 rounded-xl border border-white/10 hover:border-colorGreen transition">
-              <div className="flex items-start gap-4">
-                <div className="bg-white/10 p-3 rounded-lg">
-                  <IconPhoneCall className="text-colorGreen" size={24} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-colorItera mb-1">Call / WhatsApp</h4>
-                  <p className="text-gray-300 text-sm">Mentari:<br />+62 852-8062-0763</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-[#121212] p-6 rounded-xl border border-white/10 hover:border-colorGreen transition">
-              <div className="flex items-start gap-4">
-                <div className="bg-white/10 p-3 rounded-lg">
-                  <IconMail className="text-colorGreen" size={24} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-colorItera mb-1">Email</h4>
-                  <p className="text-gray-300 text-sm">hki@itera.ac.id</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-[#121212] p-6 rounded-xl border border-white/10 hover:border-colorGreen transition">
-              <div className="flex items-start gap-4">
-                <div className="bg-white/10 p-3 rounded-lg">
-                  <IconBrandInstagram className="text-colorGreen" size={24} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-colorItera mb-1">Instagram</h4>
-                  <p className="text-gray-300 text-sm">@hkiitera</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
+        <Kontakkami />
           {/* Google Maps */}
           <div className="rounded-xl overflow-hidden border border-white/10 shadow-lg">
             <iframe
