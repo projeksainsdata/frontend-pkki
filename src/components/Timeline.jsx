@@ -21,7 +21,7 @@ const hakiTypes = [
 const JenisHaki = () => {
   return (
     <div className="bg-gradient-to-b from-[#121212] to-[#6963ac] to-[900%] rounded-t-2xl md:rounded-t-[80px] font-spaceGrotesk px-5 py-16 md:px-20">
-      <h1 className="text-colorGreen text-center text-3xl md:text-4xl font-bold mb-12">
+      <h1 className="text-colorItera text-center text-3xl md:text-4xl font-bold mb-12">
         Jenis Hak Kekayaan Intelektual (HKI)
       </h1>
 

@@ -49,6 +49,16 @@
   position: relative;
 }
 
+.pattern-bg {
+  background-color: transparent; /* atau sesuai desain kamu */
+  background-image: url('/assets/images/icon-pkki-01.svg');
+  background-repeat: repeat;
+  background-size: 80px; /* atau 60px sesuai kebutuhan */
+  background-position: center;
+}
+
+
+
 /* banner */
 .bannerHome {
   background-size: cover;

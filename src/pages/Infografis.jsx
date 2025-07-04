@@ -77,7 +77,7 @@ const InfografisPage = () => {
   return (
     <>
     <Navbar />
-    <BannerCustom name="Dashboard" />
+    <BannerCustom name="Infografis" />
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-red-50 p-4">
       <div className="max-w-full mx-auto">
         {/* Header */}
