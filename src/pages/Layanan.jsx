@@ -40,7 +40,7 @@ const Layanan = () => {
           {layananList.map((layanan, index) => (
             <div
               key={index}
-              className="bg-[#121212] text-white p-6 rounded-xl shadow-md border border-colorGreen hover:shadow-lg transition"
+              className="bg-[#121212] text-colorItera p-6 rounded-xl shadow-md border border-colorGreen hover:shadow-lg transition"
             >
               <div className="flex items-center gap-4 mb-4">
                 {layanan.icon}

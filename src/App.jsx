@@ -26,7 +26,6 @@ const App = () => {
           <Route path='/infografis' element={<InfografisPage />} />
           <Route path='/faqs' element={<FaqPage />} />
           <Route path='/layanan' element={<Layanan />} />
-          <Route path='/haki' element={<DaftarHaki />} />
           <Route path='/tentang-kami' element={<TentangKami />} />
         </Routes>
       </Router>

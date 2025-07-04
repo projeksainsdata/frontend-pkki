@@ -31,7 +31,7 @@ const LombaSpesifikasiPaten = () => {
 
           {/* Info Ringkas */}
           <div className="w-full lg:w-1/2 bg-[#121212] text-white p-8 rounded-xl space-y-6 shadow-md">
-            <h2 className="text-2xl font-bold text-colorGreen">Tentang Lomba</h2>
+            <h2 className="text-2xl font-bold text-colorItera">Tentang Lomba</h2>
             <p>
               Pusat Kelola Karya Intelektual ITERA bekerja sama dengan Lembaga
               Penjaminan Mutu dan Pengembangan Pembelajaran mengadakan

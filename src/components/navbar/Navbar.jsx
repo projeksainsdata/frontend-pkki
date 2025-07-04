@@ -98,12 +98,6 @@ const Navbar = () => {
             FAQs
           </Link>
           <Link
-            to="/haki"
-            className={`nav-link relative hover:after:w-full after:transition-all after:duration-300 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:bg-colorItera after:w-0 ${isSticky ? 'text-white' : 'text-white'}`}
-          >
-            HAKI
-          </Link>
-          <Link
             to="/tentang-kami"
             className={`nav-link relative hover:after:w-full after:transition-all after:duration-300 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:bg-colorItera after:w-0 ${isSticky ? 'text-white' : 'text-white'}`}
           >
@@ -148,7 +142,6 @@ const Navbar = () => {
           <Link to="/layanan" className="block nav-link py-2 mx-4 relative hover:after:w-full after:transition-all after:duration-300 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:bg-white after:w-0">Layanan</Link>
           <Link to="/infografis" className="block nav-link py-2 mx-4 relative hover:after:w-full after:transition-all after:duration-300 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:bg-white after:w-0">Infografis</Link>
           <Link to="/faqs" className="block nav-link py-2 mx-4 relative hover:after:w-full after:transition-all after:duration-300 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:bg-white after:w-0">FAQs</Link>
-          <Link to="/haki" className="block nav-link py-2 mx-4 relative hover:after:w-full after:transition-all after:duration-300 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:bg-white after:w-0">HAKI</Link>
           <Link to="/tentang-kami" className="block nav-link py-2 mx-4 relative hover:after:w-full after:transition-all after:duration-300 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:bg-white after:w-0">Tentang Kami</Link>
           <Link to="https://hki.proyekai.com/login" className="block nav-link bg-colorGreen mx-4 px-4 py-2 text-colorItera rounded-full my-3">Daftarkan HAKI</Link>
         </div>

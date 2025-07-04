@@ -16,6 +16,21 @@ const hakiTypes = [
     description:
       "Perlindungan terhadap kreasi bentuk, konfigurasi, atau komposisi garis dan warna yang memberikan kesan estetis pada produk industri atau kerajinan tangan.",
   },
+  {
+    title: "Merek",
+    description:
+      "Tanda yang dapat ditampilkan secara grafis dalam bentuk gambar, logo, nama, kata, huruf, angka, susunan warna, atau kombinasi dari unsur tersebut untuk membedakan barang dan/atau jasa.",
+  },
+  {
+    title: "Rahasia Dagang",
+    description:
+      "Informasi yang bersifat rahasia di bidang teknologi dan/atau bisnis yang memiliki nilai ekonomi dan dijaga kerahasiaannya melalui upaya tertentu.",
+  },
+  {
+    title: "Desain Tata Letak Sirkuit Terpadu",
+    description:
+      "Perlindungan terhadap rancangan peletakan tiga dimensi dari elemen-elemen dalam sirkuit terpadu yang digunakan dalam produk elektronik.",
+  },
 ];
 
 const JenisHaki = () => {

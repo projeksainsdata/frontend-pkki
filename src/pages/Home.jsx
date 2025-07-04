@@ -13,6 +13,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Speaker from "../components/Speaker";
 import JenisHaki from "../components/Timeline";
+import BlogInformasi from "../components/BlogInformasi";
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
         <Banner/>
         <About/>
         <JenisHaki/>
+        <BlogInformasi/>
         <Trip/>
         <Contact/>
         <Footer/>
