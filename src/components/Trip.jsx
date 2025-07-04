@@ -8,7 +8,7 @@ const Trip = () => {
             <div className="tripBanner font-plusJakarta flex items-center justify-center">
                 <div className="relative z-10 flex gap-3">
                     <a
-                        href="#"
+                        href="https://hki.proyekai.com/login"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -17,7 +17,7 @@ const Trip = () => {
                             <IconArrowRight className="w-5" />
                         </button>
                     </a>
-                    <Link to="/daftar-haki">
+                    <Link to="/haki">
                         <button className="bg-colorItera flex w-fit py-2 px-5 items-center rounded-full gap-1 text-black font-bold hover:bg-colorGreen transition duration-300">
                             Lihat Daftar HAKI
                             <IconArrowRight className="w-5" />

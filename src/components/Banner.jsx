@@ -5,7 +5,7 @@ import lpmpp from "../assets/images/lpmpp-01.png";
 
 const Banner = () => {
   const handleLoginClick = () => {
-    window.location.href = "/admin/login";
+    window.location.href = "https://hki.proyekai.com/login";
   };
 
 return (
@@ -36,7 +36,7 @@ return (
                     Login
                 </button>
                 <Link
-                    to="/daftar-hak-paten"
+                    to="https://hki.proyekai.com/login"
                     className="bg-colorGreen text-white px-6 py-3 rounded-full hover:bg-colorItera transition duration-300"
                 >
                     Login SSO

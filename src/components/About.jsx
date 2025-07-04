@@ -39,7 +39,7 @@ const About = () => {
             <p className="font-plusJakarta font-medium text-colorDarkBlue">
               PKKI berperan sebagai pusat informasi dan layanan untuk pengajuan Hak Kekayaan Intelektual (HKI), baik dalam bentuk hak cipta, paten, maupun kekayaan intelektual lainnya. Tujuan utamanya adalah mendorong inovasi, perlindungan karya, dan kontribusi nyata terhadap pengembangan ilmu pengetahuan dan teknologi di Indonesia.
             </p>
-            <Link to="/information">
+            <Link to="/tentang-kami">
               <button className="flex items-center gap-3 bg-colorGreen px-5 py-2 font-bold rounded-full w-fit text-lg text-colorItera hover:bg-[#181818] hover:text-colorGreen border border-colorGreen">
                 Tim PKKI <IconArrowRight />
               </button>

@@ -1,105 +1,99 @@
-import React from 'react';
-import Navbar from '../components/navbar/Navbar';
-import Footer from '../components/Footer';
-import BannerCustom from '../components/BannerCustom';
-import ardika_satria from '../assets/images/committee/ardika_satria.jpg';
-import Dirga from '../assets/images/committee/Dirga.jpg';
-import Efrinita from '../assets/images/committee/Efrinita.jpg';
-import Gusrian_Putra from '../assets/images/committee/Gusrian-Putra-.png';
-import Ikah from '../assets/images/committee/Ikah.jpg';
-import Nadisah from '../assets/images/committee/Nadisah.jpg';
-import Nisa_Yulianti_Suprahman from '../assets/images/committee/Nisa-Yulianti-Suprahman.jpg';
-import robiatul from '../assets/images/committee/robiatul.jpg';
-import Sofiana_Herman from '../assets/images/committee/Sofiana-Herman.jpg';
+import React from "react";
+import BannerCustom from "../components/HeroCustom";
+import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/Footer";
+import {
+  IconMapPin,
+  IconPhoneCall,
+  IconMail,
+  IconBrandInstagram,
+} from "@tabler/icons-react";
 
-import rektor from '../assets/images/committee/rektor.png';
-import wakilrektor from '../assets/images/committee/wakilrektor.jpg';
-import wakilrektornonakademik from '../assets/images/committee/wakilrektornonakademik.png';
-import ketuajurusansains from '../assets/images/committee/ketuajurusansains.jpg';
-
-const Committee = () => {
-  let commit = [
-    {
-      title: 'International Advisory Board',
-      member: [
-        'Prof. Dr. I Nyoman Pugeg Aryantha',
-        'Prof. Dr. Eng. Khairurrijal, M.Si.',
-        'Dr. Rahayu Sulistyorini, S.T., M.T',
-      ],
-      img:[rektor,wakilrektor,wakilrektornonakademik]
-    },
-    {
-      title: 'Steering Committee',
-      member: [
-        'Dr. Ikah Ning Prasetiowati Permanasari, S.Si., M.Si.',
-        'Dr. Sri Efrinita Irwan, S.Si., M.Si.',
-        'apt. Dirga, S.Farm., M.Sc.',
-      ],
-      img:[ketuajurusansains,Efrinita,Dirga]
-    },
-    {
-      title: 'General Chair',
-      member: ['Dr. Robiatul Muztaba, S.Si., M.Si.'],
-      img:[robiatul]
-    },
-    {
-      title: 'Treasurer',
-      member: ['Sofiana Herman, S.Si., M.Si.'],
-      img:[Sofiana_Herman]
-    },
-    {
-      title: 'Secretary',
-      member: ['Nadiisah Nurul Inayah, S.Si., M.Si.'],
-      img:[Nadisah]
-    },
-    {
-      title: 'Event',
-      member: ['Gusrian Putra, S.Si., M.Si.'],
-      img:[Gusrian_Putra]
-    },
-    {
-      title: 'Public Relation',
-      member: ['apt. Nisa Yulianti Suprahman, S.Farm., M.Sc.'],
-      img:[Nisa_Yulianti_Suprahman]
-    },
-    {
-      title: 'Publication, Documentation and Technology',
-      member: ['Ardika Satria, S.Si., M.Si.'],
-      img:[ardika_satria]
-    }
-  ];
-
+const TentangKami = () => {
   return (
     <>
       <Navbar />
-      <BannerCustom name="Committee" />
-      <div className="mx-10 mt-36">
-        {commit.map((komite) => (
-          <div className="my-5 text-center flex flex-col items-center justify-center">
-          <h1 className="pb-2 text-2xl text-white font-bold font-spaceGrotesk border-b-2 border-b-colorGreen my-4">
-            {komite.title}
-          </h1>
-          <div className="flex flex-col md:flex-row gap-6">
-            {komite.member.map((dosen,pos) => (
-              <div className="bg-gradient-to-b from-[#121212] to-[#39FF14] to-[900%] p-5 rounded-xl flex flex-col items-center w-72">
-                <img
-                  src={komite.img[pos]}
-                  className="w-40 h-40 object-cover object-top rounded-lg mb-3"
-                />
-                <div className="flex flex-col ml-3">
-                  <p className="text-xl text-colorGreen font-bold text-center font-spaceGrotesk">
-                    {dosen}
+      <BannerCustom name="Kontak Kami" />
+
+      <section className="py-20 text-colorDarkBlue">
+        <div className="max-w-7xl mx-auto px-6 mt-10 space-y-16">
+          {/* Judul */}
+          <div className="text-center">
+            <h1 className="text-3xl md:text-4xl font-bold">Hubungi PKKI ITERA</h1>
+            <p className="text-gray-400 mt-2">Kami siap membantu Anda dalam pengurusan HAKI di kampus ITERA.</p>
+          </div>
+
+          {/* Kontak Info */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-[#121212] p-6 rounded-xl border border-white/10 hover:border-colorGreen transition">
+              <div className="flex items-start gap-4">
+                <div className="bg-white/10 p-3 rounded-lg">
+                  <IconMapPin className="text-colorGreen" size={24} />
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-colorItera mb-1">Alamat</h4>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    Gedung Training Center, Jalan Terusan Ryacudu, Way Hui, Kecamatan Jatiagung, Lampung Selatan 35365.
                   </p>
                 </div>
               </div>
-            ))}
+            </div>
+
+            <div className="bg-[#121212] p-6 rounded-xl border border-white/10 hover:border-colorGreen transition">
+              <div className="flex items-start gap-4">
+                <div className="bg-white/10 p-3 rounded-lg">
+                  <IconPhoneCall className="text-colorGreen" size={24} />
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-colorItera mb-1">Call / WhatsApp</h4>
+                  <p className="text-gray-300 text-sm">Mentari:<br />+62 852-8062-0763</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-[#121212] p-6 rounded-xl border border-white/10 hover:border-colorGreen transition">
+              <div className="flex items-start gap-4">
+                <div className="bg-white/10 p-3 rounded-lg">
+                  <IconMail className="text-colorGreen" size={24} />
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-colorItera mb-1">Email</h4>
+                  <p className="text-gray-300 text-sm">hki@itera.ac.id</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-[#121212] p-6 rounded-xl border border-white/10 hover:border-colorGreen transition">
+              <div className="flex items-start gap-4">
+                <div className="bg-white/10 p-3 rounded-lg">
+                  <IconBrandInstagram className="text-colorGreen" size={24} />
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-colorItera mb-1">Instagram</h4>
+                  <p className="text-gray-300 text-sm">@hkiitera</p>
+                </div>
+              </div>
+            </div>
           </div>
+
+          {/* Google Maps */}
+          <div className="rounded-xl overflow-hidden border border-white/10 shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3139.646461800945!2d105.3155440737678!3d-5.35533065360931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40c30023a9c495%3A0x77f302ebeab5bc07!2sGedung%20Training%20Center%20(TC)%20Itera!5e1!3m2!1sid!2sid!4v1749745104774!5m2!1sid!2sid"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              className="w-full"
+            ></iframe>
           </div>
-        ))}
-      </div>
+        </div>
+      </section>
+
       <Footer />
     </>
   );
 };
 
-export default Committee;
+export default TentangKami;

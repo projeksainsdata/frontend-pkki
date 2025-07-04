@@ -18,7 +18,7 @@ const FAQ = () => {
                 {faqData.map((faq, index) => (
                     <div
                         key={index}
-                        className={`cursor-pointer border p-[23px] font-bold ${selectedCategory === index ? 'bg-colorGreen text-black border' : 'text-white'}`}
+                        className={`cursor-pointer border p-[23px] font-bold ${selectedCategory === index ? 'bg-colorGreen text-colorItera border' : 'text-black'}`}
                         onClick={() => setSelectedCategory(index)}
                     >
                         <h2 className="text-lg font-spaceGrotesk">{faq.category}</h2>
@@ -29,7 +29,7 @@ const FAQ = () => {
                 {selectedCategory !== null && faqData[selectedCategory].questions.map((faq, index) => (
                     <div key={index}>
                         <div
-                            className="flex justify-between text-lg items-center cursor-pointer bg-darkGreen p-[6px]"
+                            className="flex justify-between text-lg items-center cursor-pointer bg-colorGreen p-[6px]"
                             onClick={() => toggleFAQ(index)}>
                             <h3 className="text-md font-medium text-white font-spaceGrotesk p-2">{faq.question}</h3>
                             <button className="text-2xl px-2 text-white">{activeIndex === index ? '-' : '+'}</button>
@@ -45,8 +45,6 @@ const FAQ = () => {
             </div>
         </div>
     </div>
-
-    <Footer/>
     </>
   );
 };
