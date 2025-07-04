@@ -17,7 +17,7 @@ const Trip = () => {
                             <IconArrowRight className="w-5" />
                         </button>
                     </a>
-                    <Link to="/haki">
+                    <Link to="/infografis">
                         <button className="bg-colorItera flex w-fit py-2 px-5 items-center rounded-full gap-1 text-black font-bold hover:bg-colorGreen transition duration-300">
                             Lihat Daftar HAKI
                             <IconArrowRight className="w-5" />
