@@ -12,7 +12,7 @@ const About = () => {
       <div className="flex flex-col md:flex-row items-center gap-12 max-w-7xl w-full">
 
       {/* Galeri Gambar dengan Overlay Gradient */}
-      <div className="grid grid-cols-2 gap-4 w-full md:w-1/2 order-last md:order-first">
+      <div className="grid grid-cols-2 gap-4 w-full md:w-1/2 mb-10 order-last md:order-first">
         {[pkki1, pkki2, pkki3, pkki4].map((img, i) => (
           <div key={i} className="relative rounded-lg overflow-hidden shadow-lg group">
             <img
