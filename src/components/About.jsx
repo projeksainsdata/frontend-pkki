@@ -27,20 +27,20 @@ const About = () => {
 
 
         {/* Teks di Kanan */}
-        <div className="text-white flex flex-col gap-10 w-full md:w-1/2">
+        <div className="text-colorGreen flex flex-col gap-10 w-full md:w-1/2">
           <div className="flex flex-col gap-3">
             <h2 className="text-2xl font-bold text-colorItera">Mendorong Inovasi - Melindungi Karya</h2>
-            <p className="font-plusJakarta text-gray-400">
+            <p className="font-plusJakarta text-colorDarkBlue">
               PKKI didukung oleh tim ahli yang berdedikasi dalam pengelolaan kekayaan intelektual, siap mendampingi proses administrasi, pelatihan, dan advokasi.
             </p>
           </div>
-                    <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 text-colorDarkBlue">
             <h1 className="text-4xl font-bold">Tentang PKKI</h1>
-            <p className="font-plusJakarta font-medium bg-gradient-to-b from-white to-[#181818] text-transparent bg-clip-text">
+            <p className="font-plusJakarta font-medium text-colorDarkBlue">
               PKKI berperan sebagai pusat informasi dan layanan untuk pengajuan Hak Kekayaan Intelektual (HKI), baik dalam bentuk hak cipta, paten, maupun kekayaan intelektual lainnya. Tujuan utamanya adalah mendorong inovasi, perlindungan karya, dan kontribusi nyata terhadap pengembangan ilmu pengetahuan dan teknologi di Indonesia.
             </p>
             <Link to="/information">
-              <button className="flex items-center gap-3 bg-colorGreen px-5 py-2 font-bold rounded-full w-fit text-lg text-black hover:bg-[#181818] hover:text-colorGreen border border-colorGreen">
+              <button className="flex items-center gap-3 bg-colorGreen px-5 py-2 font-bold rounded-full w-fit text-lg text-colorItera hover:bg-[#181818] hover:text-colorGreen border border-colorGreen">
                 Tim PKKI <IconArrowRight />
               </button>
             </Link>

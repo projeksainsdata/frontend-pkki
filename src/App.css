@@ -1,6 +1,6 @@
 
 :root {
-  background-color: #181818;
+  background-color: #e8e8e8;
 }
 
 .navbar {
@@ -16,7 +16,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: transparent;
+  background-color: #181818;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transform: translateY(0);
   animation: slide-down 0.5s forwards;
@@ -40,6 +40,14 @@
   color: white;
 }
 
+/* Footer */
+.footer {
+  background-color: #181818;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
 
 /* banner */
 .bannerHome {

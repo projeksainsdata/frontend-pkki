@@ -4,6 +4,7 @@ import './App.css';
 import FaqPage from './pages/FaqPage';
 import Committee from './pages/Committee';
 import Schedule from './pages/Schedule';
+import InfografisPage from './pages/Infografis';
 
 const App = () => {
 
@@ -12,6 +13,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route index element={<Home/>}/>
+          <Route path='/infografis' element={<InfografisPage/>}/>
         </Routes>
       </Router>
     </>

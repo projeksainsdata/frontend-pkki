@@ -40,7 +40,9 @@ export default {
         colorViolet: "#0B1D51",
         colorGreen: "#3A4767",
         darkGreen: "#219c0b",
-        colorItera: "#c8b579"
+        colorItera: "#c8b579",
+        colorDarkBlue: "#2A1458",
+        colorUngu: "#6963ac"
       },
     },
   },
