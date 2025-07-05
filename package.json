@@ -12,9 +12,20 @@
   "dependencies": {
     "@tabler/icons-react": "^3.7.0",
     "aos": "^2.3.4",
+    "axios": "^1.10.0",
+    "chart.js": "^4.5.0",
+    "chartjs": "^0.3.24",
+    "dayjs": "^1.11.13",
+    "js-cookie": "^3.0.5",
+    "jwt-decode": "^4.0.0",
     "react": "^18.3.1",
+    "react-chartjs-2": "^5.3.0",
+    "react-data-table-component": "^7.7.0",
     "react-dom": "^18.3.1",
+    "react-quill": "^2.0.0",
     "react-router-dom": "^6.24.0",
+    "react-toastify": "^11.0.5",
+    "sweetalert2": "^11.22.2",
     "swiper": "^11.1.4"
   },
   "devDependencies": {

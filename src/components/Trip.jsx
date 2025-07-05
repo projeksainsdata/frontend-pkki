@@ -8,7 +8,7 @@ const Trip = () => {
             <div className="tripBanner font-plusJakarta flex items-center justify-center">
                 <div className="relative z-10 flex gap-3">
                     <a
-                        href="https://hki.proyekai.com/login"
+                        href="https://s.id/hki-itera"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

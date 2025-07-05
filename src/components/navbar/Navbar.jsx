@@ -7,6 +7,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    setIsLoggedIn(!!token);
+  }, []);
 
 
   useEffect(() => {
@@ -103,7 +109,16 @@ const Navbar = () => {
           >
             Tentang Kami
           </Link>
-          <Link to="https://hki.proyekai.com/login" className={`nav-link ${isSticky ? 'bg-colorItera text-colorGreen' : 'bg-colorGreen text-colorItera'} px-4 py-2 rounded-full`}>Daftarkan HAKI</Link>
+          <Link to="https://s.id/hki-itera" className={`nav-link ${isSticky ? 'bg-colorItera text-colorGreen' : 'bg-colorGreen text-colorItera'} px-4 py-2 rounded-full`}>Daftarkan HAKI</Link>
+          {isLoggedIn && (
+            <Link
+              to="/admin"
+              className={`nav-link ${isSticky ? 'bg-white text-black' : 'bg-white text-black'} px-4 py-2 rounded-full`}
+            >
+              Admin
+            </Link>
+          )}
+
         </div>
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className={`nav-link ${isSticky ? 'text-white' : 'text-white'}`}>
@@ -143,7 +158,10 @@ const Navbar = () => {
           <Link to="/infografis" className="block nav-link py-2 mx-4 relative hover:after:w-full after:transition-all after:duration-300 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:bg-white after:w-0">Infografis</Link>
           <Link to="/faqs" className="block nav-link py-2 mx-4 relative hover:after:w-full after:transition-all after:duration-300 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:bg-white after:w-0">FAQs</Link>
           <Link to="/tentang-kami" className="block nav-link py-2 mx-4 relative hover:after:w-full after:transition-all after:duration-300 after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:bg-white after:w-0">Tentang Kami</Link>
-          <Link to="https://hki.proyekai.com/login" className="block nav-link bg-colorGreen mx-4 px-4 py-2 text-colorItera rounded-full my-3">Daftarkan HAKI</Link>
+          <Link to="https://s.id/hki-itera" className="block nav-link bg-colorGreen mx-4 px-4 py-2 text-colorItera rounded-full my-3">Daftarkan HAKI</Link>
+          {isLoggedIn && (
+            <Link to="/admin" className="block nav-link bg-white mx-4 px-4 py-2 text-black rounded-full my-3">Admin</Link>
+          )}
         </div>
       )}
     </nav>
