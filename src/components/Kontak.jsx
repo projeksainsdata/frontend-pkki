@@ -27,7 +27,7 @@ const Kontakkami = () => {
           <a href="mailto:hki@itera.ac.id" className="bg-colorGreen p-3 rounded text-gray-400 hover:text-white flex justify-center items-center w-full md:w-auto">
             <IconMail />
           </a>
-          <Link to={"/"} className="bg-colorGreen p-3 rounded text-gray-400 hover:text-white flex justify-center items-center w-full md:w-auto">
+          <Link to={"https://instagram.com/hkiitera"} className="bg-colorGreen p-3 rounded text-gray-400 hover:text-white flex justify-center items-center w-full md:w-auto">
             <IconBrandInstagram />
           </Link>
         </div>
@@ -39,7 +39,7 @@ const Kontakkami = () => {
         </p>
         <Link
           className="bg-colorGreen py-3 px-5 rounded text-md text-center text-colorItera w-full md:w-auto font-semibold hover:bg-colorUngu transition-colors"
-          to="/layanan-pengaduan"
+          to="https://s.id/pengaduan-hki-itera"
         >
           Layanan Pengaduan
         </Link>
